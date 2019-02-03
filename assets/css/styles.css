@@ -1,0 +1,206 @@
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../fonts/Montserrat-Bold/fonts/Montserrat-Bold.eot');
+  src: local('☺'), url('../fonts/Montserrat-Bold/fonts/Montserrat-Bold.woff') format('woff'), url('../fonts/Montserrat-Bold/fonts/Montserrat-Bold.ttf') format('truetype'), url('../fonts/Montserrat-Bold/fonts/Montserrat-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Extra-Bold';
+  src: url('../fonts/Montserrat-ExtraBold/fonts/Montserrat-ExtraBold.eot');
+  src: local('☺'), url('../fonts/Montserrat-ExtraBold/fonts/Montserrat-ExtraBold.woff') format('woff'), url('../fonts/Montserrat-ExtraBold/fonts/Montserrat-ExtraBold.ttf') format('truetype'), url('../fonts/Montserrat-ExtraBold/fonts/Montserrat-ExtraBold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url('../fonts/Montserrat-Medium/fonts/Montserrat-Medium.eot');
+  src: local('☺'), url('../fonts/Montserrat-Medium/fonts/Montserrat-Medium.woff') format('woff'), url('../fonts/Montserrat-Medium/fonts/Montserrat-Medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Montserrat-Semi-Bold';
+  src: url('../fonts/Montserrat-SemiBold/fonts/Montserrat-SemiBold.eot');
+  src: local('☺'), url('../fonts/Montserrat-SemiBold/fonts/Montserrat-SemiBold.woff') format('woff'), url('../fonts/Montserrat-SemiBold/fonts/Montserrat-SemiBold.ttf') format('truetype'), url('../fonts/Montserrat-SemiBold/fonts/Montserrat-SemiBold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+* {
+
+  outline: none;
+
+}
+
+img {
+
+  max-width: 100%;
+
+}
+
+#logo {
+
+  max-width: 175px;
+
+}
+
+.banner-header {
+
+  background-size: cover;
+  background-position: center center;
+  height: 550px;
+  padding: 25px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: relative;
+
+}
+
+.banner-header.about {
+
+  background-image: url("../img/hotel_catamaran_about.jpg");
+
+}
+
+.banner-header.amenities {
+
+  background-image: url("../img/hotel_catamaran_amenities.jpg");
+
+}
+
+.banner-header.rooms {
+
+  background-image: url("../img/hotel_catamaran_rooms.jpg");
+
+}
+
+.banner-header.what-to-do {
+
+  background-image: url("../img/hotel_catamaran_what_to_do.jpg");
+
+}
+
+.banner-header.contact {
+
+  height: auto;
+
+}
+
+.button-box {
+
+  position: absolute;
+  width: 100%;
+  bottom: 50px;
+  left: 0px;
+
+}
+
+.img-flying {
+
+  position: relative;
+  top: -40px;
+
+}
+
+.border-design {
+
+  border: 1px solid;
+  padding: 15px;
+
+}
+
+.banner-header #button {
+
+  background-color: rgba(74, 74, 74, 0.60);
+  border-radius: inherit;
+  color: #FFF;
+  padding: 12px 45px;
+
+}
+
+
+.banner-header.contact #menu li a {
+
+  color: #000;
+
+}
+
+#menu li {
+
+  float: left;
+  list-style: none;
+  margin-left: 30px;
+
+}
+
+.title {
+
+  font-size: 24px;
+  color: #4A4A4A;
+  font-family: 'Montserrat-Extra-Bold';
+
+}
+
+.text {
+
+  font-size: 16px;
+  color: #4A4A4A;
+  text-align: justify;
+  font-family: 'Montserrat-Medium'
+
+}
+
+
+#menu li a {
+
+  color: #FFF;
+  text-decoration: none;
+  font-family: 'Montserrat-Medium'
+
+}
+
+#menu li a.active {
+
+  font-family: 'Montserrat-Bold'
+
+}
+
+
+
+
+@media (max-width: 33.9em) { 
+
+  
+
+}
+
+@media (max-width: 47.9em) {
+
+
+
+}
+ 
+@media (max-width: 61.9em) {
+
+
+  .img-flying {
+
+    position: initial;
+    margin-top: 10px;
+  
+  }
+  
+}
+ 
+@media (max-width: 74.9em) { 
+
+
+
+}
+
