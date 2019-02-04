@@ -113,7 +113,7 @@ img {
   padding-top: 15px;
   padding-bottom: 15px;
   background-color: #FFF;
-  box-shadow: #808080 0px 0px 25px;
+  box-shadow: #505050 0px 0px 25px;
 
 }
 
@@ -131,6 +131,24 @@ img {
 
   position: relative;
   top: -40px;
+
+}
+
+.text-flying-top {
+
+  position: absolute;
+  width: auto;
+  right: 25px;
+  top: -55px;
+
+}
+
+.text-flying-bottom {
+
+  position: absolute;
+  width: auto;
+  right: 25px;
+  bottom: -55px;
 
 }
 
