@@ -134,12 +134,21 @@ img {
 
 }
 
+
+.border-design {
+
+  border: 1px solid;
+  padding: 15px;
+
+}
+
 .text-flying-top {
 
   position: absolute;
   width: auto;
   right: 25px;
-  top: -55px;
+  top: -50px;
+  padding: 15px 75px;
 
 }
 
@@ -148,16 +157,11 @@ img {
   position: absolute;
   width: auto;
   right: 25px;
-  bottom: -55px;
+  bottom: -50px;
+  padding: 15px 75px;
 
 }
 
-.border-design {
-
-  border: 1px solid;
-  padding: 15px;
-
-}
 
 .banner-header #button {
 
@@ -249,6 +253,28 @@ img {
 
     position: initial;
     margin-top: 10px;
+  
+  }
+
+  .text-flying-top {
+
+    position: relative;
+    width: auto;
+    right: 0px;
+    top: 0px;
+    padding: inherit;
+    margin-top: 50px;
+
+  }
+  
+  .text-flying-bottom {
+  
+    position: relative;
+    width: auto;
+    right: 0px;
+    bottom: -0px;
+    padding: inherit;
+    margin-bottom: 50px;
   
   }
   
