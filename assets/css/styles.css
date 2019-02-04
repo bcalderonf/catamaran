@@ -98,6 +98,24 @@ img {
 
 }
 
+.banner-header.index {
+
+  background-image: url("../img/mar-hotel-catamaran.jpg");
+  height: 100vh;
+  padding: 0px;
+
+}
+
+.banner-header .header-back {
+
+  padding: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #FFF;
+
+}
+
+
 .button-box {
 
   position: absolute;
@@ -132,6 +150,12 @@ img {
 
 
 .banner-header.contact #menu li a {
+
+  color: #000;
+
+}
+
+.banner-header.index #menu li a {
 
   color: #000;
 
@@ -176,7 +200,6 @@ img {
   font-family: 'Montserrat-Bold'
 
 }
-
 
 
 
