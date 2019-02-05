@@ -232,6 +232,37 @@ img {
 
 }
 
+.container-relative {
+
+  position: relative;
+
+}
+
+.container-relative:hover .text-desc {
+
+  opacity: 1;
+  -webkit-opacity: 1;
+  
+}
+
+.text-desc {
+
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  padding-bottom: 35px;
+  font-size: 14px;
+  background-color: rgba(0,0,0,0.63);
+  color: #FFF;
+  opacity: 0;
+  -webkit-opacity: 0;
+  font-family: 'Montserrat-Medium';
+  transition: all 1s;
+
+}
+
 
 
 @media (max-width: 33.9em) { 
