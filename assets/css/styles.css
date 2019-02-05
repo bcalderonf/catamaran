@@ -149,6 +149,7 @@ img {
   right: 25px;
   top: -50px;
   padding: 15px 75px;
+  z-index: 1;
 
 }
 
@@ -159,6 +160,7 @@ img {
   right: 25px;
   bottom: -50px;
   padding: 15px 75px;
+  z-index: 1;
 
 }
 
@@ -306,7 +308,7 @@ img {
     bottom: -0px;
     padding: inherit;
     margin-bottom: 50px;
-  
+
   }
   
 }
