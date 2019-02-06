@@ -46,7 +46,7 @@ img {
 
 #logo {
 
-  max-width: 140px;
+  max-width: 150px;
 
 }
 
@@ -111,6 +111,7 @@ img {
 .banner-header.landing {
 
   background-image: url("../img/hotel_catamaran_landing.jpg");
+  background-position: top center;
   height: 100vh;
 
 }
@@ -272,6 +273,8 @@ img {
   -webkit-opacity: 0;
   font-family: 'Montserrat-Medium';
   transition: all 1s;
+  overflow-y: scroll;
+  max-height: 100%;
 
 }
 
@@ -288,6 +291,7 @@ img {
 	margin: 0 50px 1ds0px 0;
   vertical-align: top;
   margin: 0px;
+  text-align: left;
 
 }
 
@@ -321,6 +325,13 @@ img {
 
 .roundborders {
 	border-radius: 5px;
+}
+
+#logoBadge {
+
+  background-color: rgba(0,0,0,0.43);
+  display: inline-block;
+
 }
 
 @media (max-width: 33.9em) { 
@@ -364,6 +375,29 @@ img {
     bottom: -0px;
     padding: inherit;
     margin-bottom: 50px;
+
+  }
+
+  #menu {
+
+    width: 100%;
+    padding: 0px;
+    margin-top: 20px; 
+
+  }
+
+  #menu li {
+
+    float: initial;
+    text-align: center;
+    margin: 0px;
+    text-shadow: #000 0px 0px 5px;
+
+  }
+
+  .header-back #menu li {
+
+    text-shadow: none;
 
   }
   
