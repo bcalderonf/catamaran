@@ -221,6 +221,14 @@ img {
 
 }
 
+.sub-title {
+
+  font-size: 18px;
+  color: #4A4A4A;
+  font-family: 'Montserrat-Semi-Bold';
+
+}
+
 .text {
 
   font-size: 16px;
@@ -230,6 +238,13 @@ img {
 
 }
 
+.txt {
+
+  font-size: 16px;
+  color: #4A4A4A;
+  font-family: 'Montserrat-Medium'
+
+}
 
 #menu li a {
 
@@ -331,6 +346,24 @@ img {
 
   background-color: rgba(0,0,0,0.43);
   display: inline-block;
+
+}
+
+.big-button {
+
+  font-size: 20px;
+  font-family: 'Montserrat-Semi-Bold';
+  background-color: #D8D8D8;
+  border-radius: inherit;
+  color: #4A4A4A;
+  padding: 12px 45px;
+
+}
+
+#contact-form small {
+
+  font-size: 14px;
+  font-family: 'Montserrat-Semi-Bold';
 
 }
 
