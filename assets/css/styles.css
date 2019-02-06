@@ -276,6 +276,52 @@ img {
 }
 
 
+.languagepicker {
+
+  background-color: rgba(54, 59, 66, 0.66);
+  font-family: 'Montserrat-Semi-Bold';
+	display: inline-block;
+	padding: 0;
+	height: 45px;
+	overflow: hidden;
+	transition: all .3s ease;
+	margin: 0 50px 1ds0px 0;
+  vertical-align: top;
+  margin: 0px;
+
+}
+
+.languagepicker:hover {
+	/* don't forget the 1px border */
+	height: 90px;
+}
+
+.languagepicker a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.languagepicker li {
+	display: block;
+	padding: 0px 20px;
+	line-height: 45px;
+}
+
+.languagepicker li:hover{
+  background-color: rgba(54, 59, 66, 1);
+}
+
+.languagepicker a:first-child li {
+	border: none;
+}
+
+.languagepicker li img {
+	margin-right: 5px;
+}
+
+.roundborders {
+	border-radius: 5px;
+}
 
 @media (max-width: 33.9em) { 
 
