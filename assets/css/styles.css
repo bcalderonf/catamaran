@@ -367,6 +367,12 @@ img {
 
 }
 
+.link:active, .link:hover, .link:visited {
+
+  color: #4A4A4A;
+
+}
+
 @media (max-width: 33.9em) { 
 
   
