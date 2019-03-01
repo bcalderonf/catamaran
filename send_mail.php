@@ -1,35 +1,98 @@
 <?php 
 
-   $destinatario = "rogerthedeveloper@gmail.com";
-   $asunto = "CONTACTO";
-   
-   $cuerpo = ' 
-   <html> 
-   <head> 
-      <title>Prueba de correo</title> 
-   </head> 
-   <body> 
-   <h1>Hola amigos!</h1> 
-   </body> 
-   </html> 
-   '; 
+if(isset($_POST["data"])) {
 
-   //para el envío en formato HTML 
+   $data = $_POST["data"];
+
+   $destination = $data[5]['value'];
+   $subject = $data[0]['value'];
+
+
    $headers = "MIME-Version: 1.0\r\n";
-   $headers .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
+   $headers .= "Content-type: text/html; charset=utf-8\r\n"; 
 
-   //dirección del remitente 
    $headers .= "From: Web Hotel Catamaran <mail@hotelcatamaran.com>\r\n"; 
 
-   //dirección de respuesta, si queremos que sea distinta que la del remitente 
-   $headers .= "Reply-To: mail@hotelcatamaran.co\r\n"; 
+   $headers .= "Reply-To: ".$data[2]["value"]."\r\n"; 
 
-   //direcciones que recibián copia 
-   $headers .= "Cc: rogerthedeveloper@gmail.com\r\n"; 
+   $headers .= "Cc: ".$data[2]["value"]."\r\n"; 
 
-   //direcciones que recibirán copia oculta 
-   $headers .= "Bcc: rogerthedeveloper@gmail.com\r\n";
 
-   mail($destinatario, $asunto, $cuerpo, $headers);
+   switch ($data[6]["value"]) {
+      case 'es':
+
+      $message = ' 
+      <html>
+      <body> 
+         Nombre: '.$data[1]["value"].'
+         <br>
+         <br>
+         <h2>'.$subject.'</h2>
+         <p>'.$data[4]["value"].'</p>
+         <br>
+         <p>
+            <strong>Email:</strong>
+            <br>
+            '.$data[2]["value"].'
+            <br>
+            <strong>Teléfono:</strong>
+            <br>
+            '.$data[3]["value"].'
+         </p> 
+      </body> 
+      </html> 
+      ';
+         
+      break;
+      case 'en':
+         
+      $message = ' 
+      <html> 
+      <body> 
+         Name: '.$data[1]["value"].'
+         <br>
+         <br>
+         <h2>'.$subject.'</h2>
+         <p>'.$data[4]["value"].'</p>
+         <br>
+         <p>
+            <strong>Email:</strong>
+            <br>
+            '.$data[2]["value"].'
+            <br>
+            <strong>Phone:</strong>
+            <br>
+            '.$data[3]["value"].'
+         </p> 
+      </body> 
+      </html> 
+      ';
+         
+      break;
+      default:
+         
+      break;
+   }
+
+   $mail = mail($destination, $subject, $message, $headers);
+   
+
+   if($mail) {
+
+      echo json_encode("sent");
+   }
+   else {
+
+      echo json_encode("error");
+
+   }
+
+}
+else {
+
+   echo json_encode("error");
+
+}
+
 
 ?>
